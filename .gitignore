@@ -21,7 +21,7 @@ input/
 extras/
 *.csv
 *.zip
-.txt
+venv.txt
 
 
 # -------------------------
