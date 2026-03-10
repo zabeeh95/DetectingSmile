@@ -22,7 +22,6 @@ while True:
         roi = roi.astype("float32") / 255.0
         roi = np.array(roi)
         roi = roi.reshape(1, 28, 28, 1)
-        # roi = np.expand_dims(roi, axis=0)       # (1, 28, 28)  adds batch
         # roi = np.expand_dims(roi, axis=-1)      # shape (1, 28, 28, 1)  adds channel
 
         notSmiling, smiling = model.predict(roi)[0]
